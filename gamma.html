@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Add the style sheet here -->
+  <link rel="stylesheet" href="styles/gamma.css" type="text/css">
+
+  <title> Target Track Web App </title>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/mjpegcanvasjs/current/mjpegcanvas.min.js"></script>
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+  <script type="text/javascript" src="scripts/gamma.js"></script>
+
+</head>
+
+<body onload="alpha()">
+
+  <div class="head">
+    <img src="images/logo.png" height="150" width="150" />
+    <span style="display:inline-block" width:"80" ></span>
+    <h1>UAV Target Tracker </h1>
+  </div>
+
+
+  <!--  Division for the control buttons -->
+  <div id="buttonPanel">
+    <button type="button" id="startBtn" class="buttons"> <b>Start Live Streaming</b></button>
+    <span style="display:inline-block" width:"80" ></span>
+    <!-- <button type="button" id="takeOffBtn"  class="buttons" disabled="true"><b>Take Off Button</b></button>
+    <span style="display:inline-block" width:"80" ></span> -->
+    <button type="button" id="selectBtn" class="buttons" disabled="true"><b>Select Target Region of Interest</b></button>
+    <span style="display:inline-block" width:"80" ></span>
+    <button type="button" id="trackBtn" class="buttons" disabled="true"><b>Start Tracking</b></button>
+
+  </div>
+
+  <!-- Division for manual UAV co-ordinates setting :  -->
+
+  <div id"coords">
+
+  </div>
+
+
+  <div id="mjpeg" class="mjpeg">
+  </div>
+  <span style="display:inline-block" width:"80" ></span>
+
+
+
+</body>
+
+
+</html>

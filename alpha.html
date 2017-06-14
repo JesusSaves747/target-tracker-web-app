@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Add the style sheet here -->
+  <link rel="stylesheet" href="styles/alpha.css" type="text/css">
+
+  <title> Target Track Web App </title>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+  <script type="text/javascript" src="http://cdn.robotwebtools.org/mjpegcanvasjs/current/mjpegcanvas.min.js"></script>
+
+  <script type="text/javascript" src="scripts/beta.js"></script>
+
+</head>
+
+<body onload="alpha()">
+
+  <h1>ANRA Target Tracker </h1>
+
+  <!--  Division for the three buttons -->
+  <div id="buttons" class="center">
+    <button type="button" id="startBtn">Start Live Streaming</button>
+    <span style="display:inline-block" width:"80" ></span>
+    <button type="button" id="selectBtn" disabled="true">Select Target Region of Interest</button>
+    <span style="display:inline-block" width:"80" ></span>
+    <button type="button" id="trackBtn" disabled="true">Start Tracking</button>
+
+  </div>
+
+
+  <div id="mjpeg" class="mjpeg">
+  </div>
+  <span style="display:inline-block" width:"80" ></span>
+  <div id="imgTrack">
+  </div>
+
+
+
+
+</body>
+
+
+</html>

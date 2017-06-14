@@ -1,0 +1,31 @@
+.buttons {
+    border: 3px solid green;
+    font-size: 20px;
+}
+
+.mjpeg {
+    margin: auto;
+    width: 45%;
+    border: 5px dashed brown;
+    padding: 10px;
+}
+
+h1 {
+  margin: auto;
+  width: 50%;
+  color: purple;
+  padding: 20px;
+}
+
+#buttonPanel{
+  margin: auto;
+  width: 40%;
+  border: 3px solid green;
+  padding: 10px;
+
+}
+
+
+body{
+  background-image: url('/home/savio/Documents/Web%20Development/ANRA_target_tracker/images/back.jpg');
+}
